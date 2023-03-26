@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Daftar</title>
+    <link rel="stylesheet" type="text/css" href="css/daftar1.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Judul halaman -->
+      <h1>Daftarkan akun Anda!!</h1>
+    </header>
+
+    <form>
+      <table>
+        <!-- Deskripsi form -->
+        <h2>
+          Untuk meraih manfaat penuh dari aplikasi ini, jangan lewatkan
+          kesempatan untuk mendaftar! Isilah formulir di bawah ini dan mulailah
+          petualangan baru Anda sekarang juga:
+        </h2>
+        <tr>
+          <td>
+            <!-- Label input nama -->
+            <label><b>Nama :</b></label>
+          </td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>
+            <!-- Label input username -->
+            <label><b>Username :</b></label>
+          </td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>
+            <!-- Label input password -->
+            <label><b>Password :</b></label>
+          </td>
+          <td><input type="password" /></td>
+        </tr>
+        <tr>
+          <td>
+            <!-- Label input email -->
+            <label><b>Email :</b></label>
+          </td>
+          <td><input type="email" /></td>
+        </tr>
+        <tr>
+          <td>
+            <!-- Label input NIM -->
+            <label for="number"><b>NIM :</b></label>
+          </td>
+          <td>
+            <input type="number" min="10" max="2109116127" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- Label input angkatan -->
+            <label><b>Angkatan :</b></label>
+          </td>
+          <td>
+            <input type="radio" id="2019" name="angkatan" value="2019" />
+            <label for="2019">2019</label>
+            <input type="radio" id="2020" name="angkatan" value="2020" />
+            <label for="2020">2020</label>
+            <input type="radio" id="2021" name="angkatan" value="2021" />
+            <label for="2021">2021</label>
+            <input type="radio" id="2022" name="angkatan" value="2022" />
+            <label for="2022">2022</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- Label input minat -->
+            <label><b>Minat :</b></label>
+          </td>
+          <td>
+            <input
+              type="checkbox"
+              id="Pemrograman web"
+              name="minat[]"
+              value="Pemrograman Web"
+            />
+            <label for="Pemrograman web">Pemrograman Web</label>
+            <input
+              type="checkbox"
+              id="data-mining"
+              name="minat[]"
+              value="Data Mining"
+            />
+            <label for="data-mining">Data Mining</label>
+            <input
+              type="checkbox"
+              id="keamanan-informasi"
+              name="minat[]"
+              value="Keamanan Informasi"
+            />
+            <label for="keamanan-informasi">Keamanan Informasi</label>
+            <input type="checkbox" id="pbo" name="minat[]" value="PBO" />
+            <label for="pbo">PBO</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- Label input kelas -->
+            <label for="kelas"><b>Kelas :</b></label>
+          </td>
+          <td>
+            <select id="kelas" name="kelas">
+              <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- Label input tanggal_lahir -->
+            <label for="tanggal_lahir"><b>Tanggal Lahir :</b></label>
+          </td>
+          <td>
+            <input type="date" id="tanggal_lahir"/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!-- Label input lampiran -->
+            <label for="lampiran"><b>Lampiran :</b></label>
+          </td>
+          <td><input type="file" id="lampiran" name="lampiran"></td>
+        </tr>
+        <tr>
+          <td>
+            <!-- Label input reset data -->
+            <label for="reset"><b>Reset Data :</b></label>
+          </td>
+          <td><input type="reset" value="Ya" /></td>
+        </tr>
+        <tr>
+        <td>
+          <!-- checkbox syarat dan ketentuan -->
+          <label for="syarat-ketentuan">Saya menyetujui syarat dan ketentuan</label>
+          </b></label>
+        </td>
+        <td>
+          <input type="checkbox" id="syarat-ketentuan" name="syarat-ketentuan" required>
+        </td>
+        </tr>
+      </table>
+    </form>
+
+    <!-- Tombol Submit form -->
+    <button onclick="alert('Terima kasih telah mengisi form!')">Kirim</button>
+  
+   <!-- Footer halaman -->
+   <footer>
+    <p>Hak Cipta &copy; Muhamad Riski Perdana Putra</p>
+  </footer>
+  
+  <!-- Skrip JS -->
+  <script src="js/daftar1.js"></script>
+    
+  </body>
+</html>

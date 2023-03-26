@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="mainContainer">
+        <div class="formPage">
+          <nav class="formCtlBlock">
+            <a href="index.html" class="loginBtn" data-tab="tab-1"
+              ><span>Login</span></a
+            ><!-- Tombol untuk menuju ke halaman login -->
+            <a href="#" class="registerBtn active" data-tab="tab-2"
+              ><span>Register</span></a
+            ><!-- Tombol yang aktif menunjukkan bahwa form yang sedang ditampilan adalah form registrasi -->
+          </nav>
+          <div class="register formBlock active" id="tab-2">
+            <form name="registerform">
+              <p>Create an account:</p>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="username"
+                  id="regusername"
+                  placeholder="Username"
+                  autocomplete="off"
+                />
+                <p id="reguserError" class="error"></p>
+                <!-- Pesan error untuk inputan username -->
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  name="password"
+                  id="regpassword"
+                  placeholder="Password"
+                />
+                <p id="regpwError" class="error"></p>
+                <!-- Pesan error untuk inputan password -->
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  name="cpassword"
+                  id="regcpassword"
+                  placeholder="Confirm password"
+                />
+                <p id="regcpwError" class="error"></p>
+                <!-- Pesan error untuk inputan konfirmasi password -->
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="email"
+                  id="regemail"
+                  placeholder="Email Address"
+                  autocomplete="off"
+                />
+                <p id="regemailError" class="error"></p>
+                <!-- Pesan error untuk inputan email -->
+              </div>
+              <div>
+                <div>Jenis kelamin :</div>
+                <!-- Label untuk jenis kelamin -->
+                <input type="radio" id="option1" name="options" value="1" />
+                <label for="option1">Laki - laki</label
+                ><!-- Pilihan laki-laki -->
+                <input type="radio" id="option2" name="options" value="2" />
+                <label for="option2">Perempuan</label
+                ><!-- Pilihan perempuan -->
+              </div>
+
+              <input
+                type="checkbox"
+                id="persyaratan"
+                name="persyaratan"
+                value="setuju"
+              />
+              <label for="persyaratan" style="cursor: pointer"
+                >Saya telah menyetujui persyaratan mendaftar</label
+              ><!-- Untuk persetujuan persyaratan -->
+
+              <div class="form-group alignRight">
+                <button id="daftar">Submit</button
+                ><!-- Tombol untuk submit form registrasi -->
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- /.formPage -->
+      </div>
+      <!-- /.mainContainer -->
+    </div>
+    <!-- /.container -->
+    <script src="js/daftar.js"></script>
+    <!-- Script untuk form registrasi -->
+  </body>
+</html>

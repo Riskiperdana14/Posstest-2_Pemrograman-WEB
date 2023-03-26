@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="mainContainer">
+        <div class="formPage">
+          <nav class="formCtlBlock">
+            <a href="index.html" class="loginBtn active" data-tab="tab-1"
+              ><span>Login</span></a
+            ><!-- Tombol untuk menuju form login -->
+            <a href="daftar.html" class="registerBtn" data-tab="tab-2"
+              ><span>register</span></a
+            ><!--  Tombol untuk menuju form registrasi -->
+          </nav>
+          <div class="login formBlock active" id="tab-1">
+            <form id="form">
+              <p>Login to your account:</p>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  placeholder="Username"
+                />
+                <p id="unError" class="error"></p>
+                <!--  Pesan error untuk inputan username -->
+              </div>
+              <div class="form-group">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Password"
+                />
+                <p id="pwError" class="error"></p>
+                <!--  Pesan error untuk inputan password -->
+              </div>
+              <div class="form-group alignRight">
+                <button type="submit" , id="login">submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- /.formPage -->
+      </div>
+      <!-- /.mainContainer -->
+    </div>
+    <!-- /.container -->
+    <script src="js/login.js"></script>
+  </body>
+</html>
